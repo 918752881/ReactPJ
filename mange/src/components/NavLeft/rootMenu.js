@@ -1,0 +1,67 @@
+export default{
+    dataMenu:[
+        {
+            name :"首页",
+            path :"/admin/home",
+            type:"appstore",
+            id:1,
+        },{
+            name:"管理",
+            path:"/admin/setting",
+            type:"setting",
+            id:2,
+            children:[{
+                name:"添加",
+                path:"/admin/setting/add",
+                id:21
+            },{
+                name:"修改",
+                path:"/admin/setting/updata",
+                id:22
+            }]
+        },{
+            name:"图标展示",
+            path:"/admin/chart",
+            type:"mail",
+            id:3,
+            children:[
+                {
+                    name:"柱状图",
+                    path:"/admin/zhu",
+                    id:31,
+                    children:[{
+                        name:"柱状图1",
+                        path:"/admin/zhu/1",
+                        id:311
+                    },{
+                        name:"柱状图2",
+                        path:"/admin/zhu/2",
+                        id:312,
+
+                    }]
+                },{
+                    name:"饼状图",
+                    path:"/admin/bin",
+                    id:32,
+                    children:[
+                        {
+                            name:"饼状图1",
+                            path:"/admin/bin/1",
+                            id:321
+
+                        },{
+                            name:"饼状图2",
+                            path:"/admin/bin/2",
+                            id:322
+                        }
+                    ]
+                }
+            ]
+        },{
+            name:"商品管理",
+            type:"setting",
+            id:4,
+            path:"/admin/goods", 
+        }
+    ]
+}
